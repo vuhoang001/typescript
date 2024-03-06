@@ -1,33 +1,12 @@
-let a = "xin chao !";
-const user = {
+const arrayObject = [];
+const user1 = {
     fullName: "Tran Vu Hoang",
-    email: "vuhoang250203@gmail.com",
-    age: 12
+    email: "email@gmail.com",
+    age: 20
 };
-console.log(user);
-let detail = {
-    fullName: "Tran Vu Hoang",
-    email: "Vuhoang250203@gmail.com",
-    age: 11,
-    socials: {
-        zalo: "zalo.com",
-        facebook: "facebook.com"
-    }
+const user2 = {
+    fullName: "Tran Thu Trang",
+    age: 21
 };
-console.log(detail);
-const admin = {
-    fullName: "Le Van A",
-    email: "levana@gmail.com",
-    phone: "123345",
-    password: "hoang",
-    roleID: "123",
-    hotline: "190018123"
-};
-const client = {
-    fullName: "Le Van A",
-    email: "levana@gmail.com",
-    phone: "123345",
-    password: '123',
-    score: 'asdfasdfzxkcjlhv',
-    average: 12
-};
+arrayObject.push(user1);
+arrayObject.push(user2);
