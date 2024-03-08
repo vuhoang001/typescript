@@ -1,9 +1,9 @@
 
-// // String 
+// // String
 // let a: string = "xin chao !"
 
 
-// //object 
+// //object
 
 // const user: {
 //     fullName: string,
@@ -17,7 +17,7 @@
 
 // // console.log(user)
 
-// // 5.Interface 
+// // 5.Interface
 // interface User {
 //     fullName: String,
 //     email: String,
@@ -39,7 +39,7 @@
 // }
 // // console.log(detail)
 
-// // 6. Extend interface  
+// // 6. Extend interface
 // interface Account {
 //     fullName: String,
 //     email: String,
@@ -78,7 +78,7 @@
 // // console.log(admin)
 // // console.log(client)
 
-// // 7. Kiểu array 
+// // 7. Kiểu array
 // const array: number[] = []
 
 // array.push(1)
@@ -96,28 +96,44 @@
 
 
 
-interface User {
-    fullName: String,
-    email?: String,
-    age?: Number
-}
+// interface User {
+//     fullName: String,
+//     email?: String,
+//     age?: Number
+// }
 
-const arrayObject: User[] = []
+// const arrayObject: User[] = []
 
-const user1: User = {
-    fullName: "Tran Vu Hoang",
-    email: "email@gmail.com",
-    age: 20
-}
+// const user1: User = {
+//     fullName: "Tran Vu Hoang",
+//     email: "email@gmail.com",
+//     age: 20
+// }
 
-const user2: User = {
-    fullName: "Tran Thu Trang",
-    age: 21
-}
-
-
-
-arrayObject.push(user1)
-arrayObject.push(user2)
+// const user2: User = {
+//     fullName: "Tran Thu Trang",
+//     age: 21
+// }
 
 
+
+// arrayObject.push(user1)
+// arrayObject.push(user2)
+
+
+// 8. Kiểu Tuple
+//     Tuple giống như một mảng, nhưng:
+//         + Số lượng phần tử trong tuple là cố định
+//         + Types của các phần tử trong mảng được chỉ định và không cần giống nhau
+
+let inforUser: [String, Number, String]
+
+inforUser = ['Nguyen Van A', 12, "Tran Vu Hoang"]
+
+
+let clock: [Number, Number, Number]
+
+clock = [12, 59, 23]
+
+const [hours, minutes, seconds] = clock
+console.log(`Bây giờ là ${hours} giờ ${minutes} phút ${seconds} giây`)

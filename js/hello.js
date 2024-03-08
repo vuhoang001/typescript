@@ -1,12 +1,6 @@
-const arrayObject = [];
-const user1 = {
-    fullName: "Tran Vu Hoang",
-    email: "email@gmail.com",
-    age: 20
-};
-const user2 = {
-    fullName: "Tran Thu Trang",
-    age: 21
-};
-arrayObject.push(user1);
-arrayObject.push(user2);
+let inforUser;
+inforUser = ['Nguyen Van A', 12, "Tran Vu Hoang"];
+let clock;
+clock = [12, 59, 23];
+const [hours, minutes, seconds] = clock;
+console.log(`Bây giờ là ${hours} giờ ${minutes} phút ${seconds} giây`);
